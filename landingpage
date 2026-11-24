@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dani Bakery | Kelezatan Cokelat Autentik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #2D1B14;
+        }
+        h1, h2, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-chocolate-dark { background-color: #1A0F0A; }
+        .bg-chocolate { background-color: #2D1B14; }
+        .text-gold { color: #D4AF37; }
+        .border-gold { border-color: #D4AF37; }
+        .bg-gold { background-color: #D4AF37; }
+        .text-cream { color: #F5E6CA; }
+        .bg-cream { background-color: #F5E6CA; }
+    </style>
+</head>
+<body class="text-cream antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-chocolate-dark/95 border-b border-gold/20 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-2xl font-serif text-gold tracking-wider">DANI BAKERY</div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest">
+            <a href="#" class="hover:text-gold transition">Beranda</a>
+            <a href="#keunggulan" class="hover:text-gold transition">Keunggulan</a>
+            <a href="#menu" class="hover:text-gold transition">Menu</a>
+            <a href="#kontak" class="hover:text-gold transition">Kontak</a>
+        </div>
+        <button class="bg-gold text-chocolate-dark px-6 py-2 rounded-sm text-sm font-bold hover:bg-opacity-90 transition">PESAN</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[80vh] flex items-center justify-center text-center px-6 overflow-hidden">
+        <!-- Overlay pseudo-background -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-chocolate"></div>
+        
+        <div class="relative z-10 max-w-3xl">
+            <h1 class="text-4xl md:text-6xl mb-6 leading-tight">
+                Kelezatan <span class="text-gold">Cokelat Autentik</span> di Setiap Gigitan
+            </h1>
+            <p class="text-lg md:text-xl mb-10 text-cream/80 font-light">
+                Dibuat dengan bahan premium untuk momen spesial Anda. Kami menghadirkan standar baru dalam dunia pastry cokelat.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#" class="bg-gold text-chocolate-dark px-8 py-4 text-lg font-bold hover:scale-105 transition-transform duration-300 inline-block shadow-lg">
+                    Pesan Sekarang
+                </a>
+                <a href="#" class="border border-gold text-gold px-8 py-4 text-lg font-bold hover:bg-gold hover:text-chocolate-dark transition-all duration-300">
+                    Lihat Menu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section id="keunggulan" class="py-24 bg-cream text-chocolate">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl mb-4">Mengapa Dani Bakery?</h2>
+                <div class="w-24 h-1 bg-gold mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 text-center">
+                <!-- Item 1 -->
+                <div class="p-8 border border-gold/30 hover:border-gold transition-colors duration-300">
+                    <div class="text-4xl mb-6">🌿</div>
+                    <h3 class="text-xl font-bold mb-4">100% Organik</h3>
+                    <p class="text-chocolate/70 leading-relaxed">
+                        Kami hanya menggunakan biji kakao pilihan tanpa bahan pengawet kimia, memastikan rasa asli cokelat tetap terjaga.
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="p-8 border border-gold/30 hover:border-gold transition-colors duration-300">
+                    <div class="text-4xl mb-6">📜</div>
+                    <h3 class="text-xl font-bold mb-4">Resep Warisan</h3>
+                    <p class="text-chocolate/70 leading-relaxed">
+                        Dikembangkan sejak 2010 dengan teknik pemanggangan tradisional yang diwariskan turun-temurun untuk kualitas konsisten.
+                    </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="p-8 border border-gold/30 hover:border-gold transition-colors duration-300">
+                    <div class="text-4xl mb-6">🚚</div>
+                    <h3 class="text-xl font-bold mb-4">Pengiriman Cepat</h3>
+                    <p class="text-chocolate/70 leading-relaxed">
+                        Sistem logistik terintegrasi menjamin kue sampai di tangan Anda dalam kondisi segar dan kemasan yang aman.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Statement Section -->
+    <section class="py-20 bg-chocolate-dark flex items-center">
+        <div class="max-w-4xl mx-auto px-6 text-center border-y border-gold/30 py-16">
+            <p class="italic text-2xl md:text-3xl font-serif text-gold/90">
+                "Cokelat bukan sekadar makanan, ia adalah bahasa kasih sayang yang kami kemas dalam setiap adonan."
+            </p>
+            <p class="mt-6 uppercase tracking-widest text-sm">— Dani, Founder</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-chocolate-dark text-cream/60 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-12 border-b border-white/10 pb-12">
+            <div class="col-span-2">
+                <h3 class="text-2xl font-serif text-gold mb-6">Dani Bakery</h3>
+                <p class="max-w-sm mb-6">
+                    Toko roti cokelat premium yang berfokus pada kualitas bahan dan kepuasan pelanggan. Nikmati pengalaman rasa tak terlupakan.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Navigasi</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="hover:text-gold">Kebijakan Privasi</a></li>
+                    <li><a href="#" class="hover:text-gold">Syarat & Ketentuan</a></li>
+                    <li><a href="#" class="hover:text-gold">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Kontak</h4>
+                <ul class="space-y-3">
+                    <li>Jl. Cokelat No. 12, Jakarta</li>
+                    <li>+62 812 3456 7890</li>
+                    <li>info@danibakery.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center pt-8 text-sm tracking-widest">
+            
+        </div>
+    </footer>
+
+</body>
+</html>
